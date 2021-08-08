@@ -1,5 +1,7 @@
 package leetCode.linklist;
 
+import leetCode.model.ListNode;
+
 public class MergeSortedList {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

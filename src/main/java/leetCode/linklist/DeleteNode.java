@@ -1,5 +1,7 @@
 package leetCode.linklist;
 
+import leetCode.model.ListNode;
+
 class DeleteNode {
 
     public void deleteNode(ListNode node) {

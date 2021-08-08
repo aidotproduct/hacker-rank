@@ -1,6 +1,8 @@
 package leetCode.linklist;
 
 
+import leetCode.model.ListNode;
+
 public class Palindrome {
 
     public boolean isPalindrome(ListNode head)
@@ -35,5 +37,26 @@ public class Palindrome {
             head = next;
         }
         return prev;
+    }
+
+
+    public boolean hasCycle(ListNode head) {
+
+        if(head == null || head.next == null)
+            return false;
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null)
+        {
+            if(fast.next == null)
+                return false;
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if(fast == slow)
+                return true;
+        }
+        return false;
     }
 }
